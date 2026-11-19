@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le Filtre — les produits des vidéos</title><meta name="description" content="Le Filtre : les produits présentés dans nos vidéos TikTok, triés et vérifiés.">
+<meta name="robots" content="index,follow"><link rel="icon" href="/lefiltre-site/assets/logo.png">
+<style>
+@font-face{font-family:"Archivo Black";src:url(/lefiltre-site/assets/ArchivoBlack.ttf)}
+@font-face{font-family:"DM Sans";src:url(/lefiltre-site/assets/DMSans.ttf);font-weight:100 900}
+:root{--vert:#0F3D2E;--creme:#F4F1E8;--lime:#C8F169;--ink:#14201B;--gris:#5C6B63}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--creme);color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+header{background:var(--vert);color:var(--creme);padding:18px 20px;display:flex;align-items:center;gap:12px}
+header img{width:40px;height:40px;border-radius:50%}
+header b{font-family:"Archivo Black";font-size:20px;letter-spacing:-.01em}
+header span{opacity:.75;font-size:13px}
+main{max-width:720px;margin:0 auto;padding:20px}
+.search{width:100%;padding:14px 16px;border-radius:12px;border:1px solid #d9d5c8;font:inherit;font-size:16px;margin-bottom:16px;background:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#fff;border-radius:16px;overflow:hidden;text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:#e8e6dd}
+.card div{padding:10px 12px 14px}
+.card small{color:var(--gris);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.card h3{font-size:15px;line-height:1.25;margin:4px 0 6px}
+.card p{font-weight:700}
+.new{display:inline-block;background:var(--lime);color:var(--vert);font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px;margin-bottom:4px}
+.hero{width:100%;border-radius:18px;aspect-ratio:1;object-fit:cover;background:#e8e6dd}
+h1{font-family:"Archivo Black";font-size:28px;line-height:1.1;margin:18px 0 8px;letter-spacing:-.01em}
+.lead{font-size:18px;color:var(--gris);margin-bottom:16px}
+ul.pts{list-style:none;margin:0 0 16px}
+ul.pts li{padding:10px 0 10px 30px;border-bottom:1px solid #e3dfd2;position:relative}
+ul.pts li:before{content:"✓";position:absolute;left:4px;color:var(--vert);font-weight:900}
+.prix{font-size:30px;font-weight:800;margin:14px 0 2px}
+.verif{font-size:13px;color:var(--gris);margin-bottom:18px}
+.cta{display:block;text-align:center;background:var(--vert);color:var(--creme);text-decoration:none;font-weight:800;font-size:18px;padding:18px;border-radius:14px}
+.legal{font-size:12px;color:var(--gris);margin-top:14px;line-height:1.5}
+.banner{background:#FFE7A3;padding:10px 14px;border-radius:10px;font-size:14px;margin-bottom:14px}
+.fin{background:#e3dfd2;padding:18px;border-radius:14px;text-align:center;font-weight:700}
+footer{max-width:720px;margin:30px auto;padding:0 20px 30px;font-size:12px;color:var(--gris);line-height:1.6}
+.back{display:inline-block;margin-bottom:14px;text-decoration:none;color:var(--gris);font-size:14px}
+</style></head><body>
+<header><a href="/lefiltre-site/"><img src="/lefiltre-site/assets/logo.png" alt=""></a><div><b>Le Filtre</b><br><span>On teste, on filtre, on garde le meilleur.</span></div></header>
+<main>
+<input class="search" type="search" placeholder="Rechercher un produit vu en vidéo…" oninput="const q=this.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.style.display=c.dataset.q.includes(q)?'':'none')">
+<div class="grid"><a class="card" href="/lefiltre-site/velo-pliant-c10/" data-q="vélo électrique pliant cyseekin c10 sport">
+<img src="/lefiltre-site/velo-pliant-c10/c10-ville.jpg" alt="Vélo électrique pliant Cyseekin C10" loading="eager">
+<div><span class="new">Dernière vidéo</span><br><small>Sport</small><h3>Vélo électrique pliant Cyseekin C10</h3><p>868 €</p></div></a></div></main>
+<footer>Le Filtre sélectionne des produits et perçoit une commission sur certains achats effectués via ses liens, sans surcoût pour vous. Les prix sont indicatifs et vérifiés à la date affichée ; le prix final est celui du marchand.<br>Contact : à renseigner</footer>
+</body></html>
